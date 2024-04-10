@@ -4,7 +4,7 @@ Hello there! I'm Kirsten, a neuroscientist and storyteller with a passion for pe
 
 Check out my some of my work and projects I've built to help modernize HR, drive data-influenced cultures at scale, and make the STEM publishing industry more efficient.
 
-## About Me
+## About Me  
 
 🔬 I have a background in neuroscience and a keen interest in understanding the intricacies of the human brain.
 
