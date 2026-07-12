@@ -1,0 +1,84 @@
+name: Planning as Code
+
+# Planning as Code
+# -----------------
+# Turns an informal request (a GitHub issue, or a manual dispatch) into a
+# structured, versioned implementation plan that lives in the repository as a
+# markdown file. The plan is opened as a pull request so it can be reviewed,
+# commented on, and diffed like any other code change — before a single line
+# of implementation is written.
+
+on:
+  # Add the `plan` label to any issue to have Claude draft a plan for it.
+  issues:
+    types: [labeled]
+  # Or trigger it by hand for ad-hoc planning.
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Describe the task you want a plan for"
+        required: true
+        type: string
+
+# Only one planning run per issue / dispatch at a time.
+concurrency:
+  group: planning-as-code-${{ github.event.issue.number || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    # Run for manual dispatches, or when the `plan` label is applied.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'issues' && github.event.label.name == 'plan')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # commit the plan file to a branch
+      pull-requests: write    # open the plan PR
+      issues: write           # comment back on the issue
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Draft implementation plan
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Restrict the tools available to the planning run: it reads the
+          # codebase and writes a single plan file — nothing else.
+          claude_args: |
+            --allowedTools "Read,Grep,Glob,Write,Edit"
+          prompt: |
+            You are running the repository's **Planning as Code** workflow.
+
+            Your job is to produce a high-quality *implementation plan* for a
+            task and save it as a committed markdown file. You are NOT
+            implementing the task — only planning it.
+
+            ## The task to plan
+
+            ${{ github.event_name == 'workflow_dispatch'
+                && format('A manually requested task:{0}{0}{1}', '\n', inputs.task)
+                || format('GitHub issue #{0}: "{1}"{2}{2}{3}', github.event.issue.number, github.event.issue.title, '\n', github.event.issue.body) }}
+
+            ## What to do
+
+            1. Explore the repository (Read / Grep / Glob) to ground the plan
+               in how this codebase is actually structured. Reference real
+               files and paths where relevant.
+            2. Write a single plan file to
+               `plans/<zero-padded-number>-<kebab-case-slug>.md`. When planning
+               a GitHub issue, use the issue number; otherwise use the next
+               available number in `plans/`. Follow the structure defined in
+               `plans/README.md` (Summary, Context, Approach, Step-by-step
+               plan, Files to change, Risks & open questions, Acceptance
+               criteria).
+            3. Keep the plan concrete and reviewable: each step should be small
+               enough to map to a commit, and every "Files to change" entry
+               should name a real or clearly-new path.
+            4. Do not edit any file other than the new plan under `plans/`.
+
+            When you have written the plan, the workflow will open it as a pull
+            request for review.
