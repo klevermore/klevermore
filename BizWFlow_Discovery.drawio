@@ -1,9 +1,63 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="em8jmj2ezi5vziggrjPO">
-    <mxGraphModel dx="529" dy="670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1356" dy="1449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ElOh10NWd8Rbki_80l7s-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="910" x="100" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="910" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="440" width="260" x="100" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;b&gt;DATA&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Schema&lt;/div&gt;&lt;div&gt;Match/dedup, classn, valid/verif, predict, convers/extract&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="260" x="100" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="440" width="130" x="380" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;b&gt;INTELLIGENCE&lt;/b&gt;&lt;/div&gt;Problem type - matching, classif, predict, convs? Solve?" vertex="1">
+          <mxGeometry height="40" width="120" x="385" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="440" width="200" x="530" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;b&gt;ACTION&lt;/b&gt;&lt;/div&gt;Business outcome to unlock, user workflow that changes" vertex="1">
+          <mxGeometry height="40" width="190" x="530" y="221" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="440" width="260" x="750" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;b&gt;OBSERVABILITY&lt;/b&gt;&lt;/div&gt;Quality, adoption, business metrics" vertex="1">
+          <mxGeometry height="40" width="260" x="750" y="221" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="910" x="100" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ADOPTION" vertex="1">
+          <mxGeometry height="40" width="190" x="110" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="910" x="100" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="HANDOVER" vertex="1">
+          <mxGeometry height="40" width="190" x="110" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="910" x="100" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="EXTENSIONS" vertex="1">
+          <mxGeometry height="40" width="190" x="110" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;STAKEHOLDERS&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="260" x="100" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ElOh10NWd8Rbki_80l7s-20" parent="1" style="text;whiteSpace=wrap;html=1;align=center;" value="&lt;div align=&quot;center&quot;&gt;GOVERNANCE&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;what&#39;s sensitive (PII?healthcare/financial) - who counsented - who can write - what&#39;s logged - vulnerable customers&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="230" x="110" y="127" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
