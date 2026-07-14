@@ -1,0 +1,120 @@
+{
+  "version": "30.3.6",
+  "pages": [
+    {
+      "id": "em8jmj2ezi5vziggrjPO",
+      "name": "Page-1",
+      "cells": [
+        {
+          "id": "1",
+          "type": "layer"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-1",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-2",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-3",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-5",
+          "type": "node",
+          "parent": "1",
+          "label": "DATA\nSchema\nMatch/dedup, classn, valid/verif, predict, convers/extract",
+          "html": "<div><b>DATA</b></div><div>Schema</div><div>Match/dedup, classn, valid/verif, predict, convers/extract</div>"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-7",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-8",
+          "type": "node",
+          "parent": "1",
+          "label": "INTELLIGENCEProblem type - matching, classif, predict, convs? Solve?",
+          "html": "<div><b>INTELLIGENCE</b></div>Problem type - matching, classif, predict, convs? Solve?"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-9",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-10",
+          "type": "node",
+          "parent": "1",
+          "label": "ACTIONBusiness outcome to unlock, user workflow that changes",
+          "html": "<div><b>ACTION</b></div>Business outcome to unlock, user workflow that changes"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-11",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-12",
+          "type": "node",
+          "parent": "1",
+          "label": "OBSERVABILITYQuality, adoption, business metrics",
+          "html": "<div><b>OBSERVABILITY</b></div>Quality, adoption, business metrics"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-13",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-14",
+          "type": "node",
+          "parent": "1",
+          "label": "ADOPTION"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-15",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-16",
+          "type": "node",
+          "parent": "1",
+          "label": "HANDOVER"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-17",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-18",
+          "type": "node",
+          "parent": "1",
+          "label": "EXTENSIONS"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-19",
+          "type": "node",
+          "parent": "1",
+          "label": "STAKEHOLDERS",
+          "html": "<div><br></div><div>STAKEHOLDERS</div>"
+        },
+        {
+          "id": "ElOh10NWd8Rbki_80l7s-20",
+          "type": "node",
+          "parent": "1",
+          "label": "GOVERNANCE\nwhat's sensitive (PII?healthcare/financial) - who counsented - who can write - what's logged - vulnerable customers",
+          "html": "<div align=\"center\">GOVERNANCE</div><div align=\"center\">what's sensitive (PII?healthcare/financial) - who counsented - who can write - what's logged - vulnerable customers</div>"
+        }
+      ]
+    }
+  ]
+}
